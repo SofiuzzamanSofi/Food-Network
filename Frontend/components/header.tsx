@@ -1,70 +1,93 @@
 import type { NextPage } from "next";
+import Image from "next/image";
+import foodnetworkIcon from "../public/foodnetwork-1.svg"
+import frame2Icon from "../public/frame2.svg"
+import frame7671Icon from "../public/frame-7671.svg"
+import frame769Icon from "../public/frame-769.svg"
+import frame765Icon from "../public/frame-765.svg"
+import frame768Icon from "../public/frame-768.svg"
+import name13Icon from "../public/name13.svg"
+import bookmark01Icon from "../public/bookmark01.svg"
+
 
 const Header: NextPage = () => {
   return (
-    <div className="absolute top-[0px] left-[calc(50%_-_960px)] bg-white w-[1920px] flex flex-row items-center justify-between py-2.5 pr-[15px] pl-[26px] box-border text-left text-xs text-gray-200 font-inter">
+    <header className="absolute top-[0px] left-[calc(50%_-_960px)] bg-white w-[1920px] flex flex-row items-center justify-between py-2.5 pr-[15px] pl-[26px] box-border text-left text-sm text-white font-inter">
       <div className="flex-1 flex flex-row items-center justify-start">
         <div className="flex flex-row items-center justify-start">
-          <img
+          <Image
             className="relative w-[71.6px] h-9 overflow-hidden shrink-0"
             alt=""
-            src="/foodnetwork-1.svg"
+            src={foodnetworkIcon}
           />
         </div>
       </div>
-      <div className="w-[390px] h-10 flex flex-col items-center justify-between">
-        <div className="self-stretch rounded-4xs bg-white overflow-hidden flex flex-row items-center justify-between py-1 pr-1 pl-[15px] border-[2px] border-solid border-whitesmoke-200">
-          <div className="relative">Search Best Food</div>
-          <div className="flex flex-row items-center justify-start gap-[20px]">
-            <img
-              className="relative w-6 h-6 overflow-hidden shrink-0 hidden"
-              alt=""
-              src="/frame3.svg"
-            />
-            <div className="rounded-md bg-tomato-400 flex flex-row items-start justify-start p-1 border-[2px] border-solid border-tomato-400">
-              <img
-                className="relative rounded w-6 h-6 overflow-hidden shrink-0"
-                alt=""
-                src="/frame4.svg"
-              />
-            </div>
-          </div>
+
+      <div className="border-4 border-red-600 relative">
+        <input
+          className="[border:none] font-inter text-xs bg-[transparent] w-[390px] h-10 px-2 flex flex-col items-center justify-between"
+          placeholder="Search Best Food"
+          type="text"
+        />
+        <div className="absolute top-2 right-2 rounded-8xs bg-tomato-400 flex flex-col items-center justify-start py-1 px-1.5">
+          <Image
+            className="relative w-[23.2px] h-[18px] overflow-hidden shrink-0"
+            alt=""
+            src={frame2Icon}
+          />
         </div>
       </div>
-      <div className="flex-1 flex flex-row items-center justify-end gap-[24px] text-sm text-white">
-        <img
+
+      {/* <div
+        className="self-stretch rounded-6xs bg-white overflow-hidden flex flex-row items-center justify-between py-1 pr-1 pl-[15px] z-[1] text-gray-600 border-[2px] border-solid border-whitesmoke-200"
+      >
+        <div className="relative">Search Best Food</div>
+        <div className="rounded-8xs bg-tomato-400 flex flex-col items-center justify-start py-1 px-1.5">
+          <Image
+            className="relative w-[23.2px] h-[18px] overflow-hidden shrink-0"
+            alt=""
+            src={frame2Icon}
+          />
+        </div>
+      </div> */}
+
+      <div className="flex-1 flex flex-row items-center justify-end gap-[24px]">
+        <Image
           className="relative rounded-md w-8 h-8 hidden"
           alt=""
-          src="/frame-768.svg"
+          src={frame768Icon}
         />
-        <img
+        <Image
           className="relative rounded-md w-[34px] h-[34px]"
           alt=""
-          src="/frame-7671.svg"
+          src={frame7671Icon}
         />
-        <img
+        <Image
           className="relative rounded-md w-[34px] h-[34px]"
           alt=""
-          src="/frame-769.svg"
+          src={frame769Icon}
         />
         <div className="rounded-md bg-tomato-100 hidden flex-row items-center justify-start py-2 px-2.5 relative gap-[5px] border-[2px] border-solid border-tomato-400">
-          <img
+          <Image
             className="absolute my-0 mx-[!important] top-[calc(50%_-_11px)] left-[calc(50%_-_10.65px)] w-5 h-5 overflow-hidden shrink-0 hidden z-[0]"
             alt=""
-            src="/bookmark01.svg"
+            src={bookmark01Icon}
           />
           <div className="relative font-semibold z-[1]">Support Us</div>
           <div className="flex flex-col items-start justify-start z-[2]">
-            <img className="relative w-[27.3px] h-5" alt="" src="/name13.svg" />
+            <Image
+              className="relative w-[27.3px] h-5" alt=""
+              src={name13Icon}
+            />
           </div>
         </div>
-        <img
+        <Image
           className="relative rounded-md w-8 h-8"
           alt=""
-          src="/frame-765.svg"
+          src={frame765Icon}
         />
       </div>
-    </div>
+    </header>
   );
 };
 
