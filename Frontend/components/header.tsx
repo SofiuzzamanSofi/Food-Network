@@ -23,9 +23,9 @@ const Header: NextPage = () => {
         </div>
       </div>
 
-      <div className="border-4 border-red-600 relative">
+      <div className="relative">
         <input
-          className="[border:none] font-inter text-xs bg-[transparent] w-[390px] h-10 px-2 flex flex-col items-center justify-between"
+          className="border-2 border-gray-500 rounded-md font-inter text-xs bg-[transparent] w-[390px] h-10 px-2 flex flex-col items-center justify-between"
           placeholder="Search Best Food"
           type="text"
         />
