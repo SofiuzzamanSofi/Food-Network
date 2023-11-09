@@ -4,6 +4,7 @@ import HealthBenefitsCard from "../components/health-benefits-card";
 import EyeHealthCard from "../components/eye-health-card";
 import { useRouter } from "next/router";
 import WebsiteCard from "../components/website-card";
+import MobileBottomMenu from "../components/MobileBottomMenu";
 
 const Home1: NextPage = () => {
   const router = useRouter();
@@ -80,63 +81,7 @@ const Home1: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-[0px] left-[0px] rounded-t-3xs rounded-b-none bg-white w-[360px] flex flex-row items-center justify-center py-2.5 px-0 box-border gap-[10px]">
-        <div className="flex flex-row items-center justify-center z-[0]">
-          <div className="flex flex-row items-start justify-center gap-[35px]">
-            <img
-              className="relative rounded-md w-[38px] h-[38px] overflow-hidden shrink-0"
-              alt=""
-              src="/icons.svg"
-            />
-            <img
-              className="relative rounded-md w-9 h-9 overflow-hidden shrink-0 cursor-pointer"
-              alt=""
-              src="/icons1.svg"
-              onClick={onIcons1Click}
-            />
-            <img
-              className="relative rounded-md w-9 h-9 overflow-hidden shrink-0 hidden"
-              alt=""
-              src="/icons2.svg"
-            />
-            <img
-              className="relative rounded-md w-9 h-9 hidden"
-              alt=""
-              src="/icons3.svg"
-            />
-            <img
-              className="relative rounded-md w-9 h-9 hidden"
-              alt=""
-              src="/icons4.svg"
-            />
-            <img
-              className="relative rounded-md w-9 h-9 hidden"
-              alt=""
-              src="/icons5.svg"
-            />
-            <img
-              className="relative rounded-md w-[34px] h-[34px]"
-              alt=""
-              src="/icons6.svg"
-            />
-            <img
-              className="relative rounded-md w-9 h-9"
-              alt=""
-              src="/icons7.svg"
-            />
-            <img
-              className="relative rounded-md w-9 h-9"
-              alt=""
-              src="/icons8.svg"
-            />
-          </div>
-        </div>
-        <img
-          className="absolute my-0 mx-[!important] bottom-[20px] left-[17px] rounded-md w-9 h-9 hidden z-[1]"
-          alt=""
-          src="/frame-767.svg"
-        />
-      </div>
+      <MobileBottomMenu />
       <div className="absolute top-[161px] left-[13px] rounded-lg bg-white w-[330px] flex flex-row items-center justify-between py-2.5 px-[15px] box-border text-xs">
         <div className="flex flex-row items-center justify-start gap-[10px]">
           <div className="relative w-5 h-5 overflow-hidden shrink-0">

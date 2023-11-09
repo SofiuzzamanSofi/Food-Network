@@ -49,7 +49,7 @@ const Property1Default: NextPage<Property1DefaultType> = ({
 
     return (
         <div
-            className="rounded-mini bg-white w-[300px] h-[830px] flex flex-col items-center justify-start p-[15px] box-border relative gap-[15px] text-left text-xs text-tomato-100 font-inter"
+            className="rounded-mini bg-white w-[300px] h-[830px] flex flex-col items-center justify-start p-[15px] box-border relative gap-[15px] text-left text-xs text-tomato-100 font-inter z-50 shadow-lg"
             style={property1DefaultStyle}
         >
             <div className="self-stretch rounded-3xs bg-white flex flex-row items-start justify-start p-1 gap-[10px] z-[0] text-sm border-[2px] border-solid border-tomato-200">

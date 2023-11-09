@@ -12,7 +12,7 @@ import bookmark01Icon from "../public/bookmark01.svg"
 
 const Header: NextPage = () => {
   return (
-    <header className="absolute top-[0px] left-[calc(50%_-_960px)] bg-white w-[1920px] flex flex-row items-center justify-between py-2.5 pr-[15px] pl-[26px] box-border text-left text-sm text-white font-inter">
+    <header className=" bg-white flex flex-row items-center justify-between py-2.5 pr-[15px] pl-[26px] box-border text-left text-sm text-white font-inter min-w-[360px] max-w-[1920px]">
       <div className="flex-1 flex flex-row items-center justify-start">
         <div className="flex flex-row items-center justify-start">
           <Image
@@ -23,7 +23,7 @@ const Header: NextPage = () => {
         </div>
       </div>
 
-      <div className="relative">
+      <div className="relative hidden lg:block">
         <input
           className="border-2 border-gray-500 rounded-md font-inter text-xs bg-[transparent] w-[390px] h-10 px-2 flex flex-col items-center justify-between"
           placeholder="Search Best Food"
@@ -38,32 +38,20 @@ const Header: NextPage = () => {
         </div>
       </div>
 
-      {/* <div
-        className="self-stretch rounded-6xs bg-white overflow-hidden flex flex-row items-center justify-between py-1 pr-1 pl-[15px] z-[1] text-gray-600 border-[2px] border-solid border-whitesmoke-200"
-      >
-        <div className="relative">Search Best Food</div>
-        <div className="rounded-8xs bg-tomato-400 flex flex-col items-center justify-start py-1 px-1.5">
-          <Image
-            className="relative w-[23.2px] h-[18px] overflow-hidden shrink-0"
-            alt=""
-            src={frame2Icon}
-          />
-        </div>
-      </div> */}
 
       <div className="flex-1 flex flex-row items-center justify-end gap-[24px]">
         <Image
-          className="relative rounded-md w-8 h-8 hidden"
+          className="relative rounded-md w-8 h-8 bg-tomato-400 lg:hidden"
           alt=""
-          src={frame768Icon}
+          src={frame2Icon}
         />
         <Image
-          className="relative rounded-md w-[34px] h-[34px]"
+          className="relative rounded-md w-[34px] h-[34px] hidden lg:block"
           alt=""
           src={frame7671Icon}
         />
         <Image
-          className="relative rounded-md w-[34px] h-[34px]"
+          className="relative rounded-md w-[34px] h-[34px] hidden lg:block"
           alt=""
           src={frame769Icon}
         />
