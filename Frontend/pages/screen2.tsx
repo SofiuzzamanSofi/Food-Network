@@ -4,7 +4,7 @@ import MobileBottomMenu from "../components/MobileBottomMenu";
 import LeftMenuDextop from "../components/LeftMenuDextop";
 import SettingComponent from "../components/SettingComponent";
 import EmptyPage from "../components/EmptyPage";
-import Header from "../components/header";
+import Header from "../components/Header";
 
 
 const Screen2: NextPage = () => {

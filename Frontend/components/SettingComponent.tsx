@@ -1,7 +1,11 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import { useMemo, type CSSProperties } from "react";
+import frameIconf from "../assets/frame.svg"
+import frame1Iconf from "../assets//frame1.svg"
+import textsquareIconf from "../assets//textsquare.svg"
 
-type Component11Frame418Type = {
+type SettingComponentType = {
   /** Style props */
   settingComponentHeight?: CSSProperties["height"];
   settingComponentWidth?: CSSProperties["width"];
@@ -10,14 +14,14 @@ type Component11Frame418Type = {
   settingComponentRight?: CSSProperties["right"];
 };
 
-const Component11Frame418: NextPage<Component11Frame418Type> = ({
+const SettingComponent: NextPage<SettingComponentType> = ({
   settingComponentHeight,
   settingComponentWidth,
   settingComponentPosition,
   settingComponentTop,
   settingComponentRight,
 }) => {
-  const component11Frame418Style: CSSProperties = useMemo(() => {
+  const settingComponent: CSSProperties = useMemo(() => {
     return {
       height: settingComponentHeight,
       width: settingComponentWidth,
@@ -36,7 +40,7 @@ const Component11Frame418: NextPage<Component11Frame418Type> = ({
   return (
     <div
       className="rounded-3xs bg-white w-[300px] h-[615px] overflow-hidden flex flex-col items-start justify-start p-[15px] box-border text-left text-base text-gray-200 font-inter top-[125px] lg:top-[72px] shadow-2xl"
-      style={component11Frame418Style}
+      style={settingComponent}
     >
       <div className="self-stretch flex flex-col items-center justify-start gap-[12px]">
         <div className="relative w-0 h-0 hidden">
@@ -45,17 +49,17 @@ const Component11Frame418: NextPage<Component11Frame418Type> = ({
         <div className="self-stretch rounded-4xs flex flex-col items-center justify-start p-2.5 gap-[24px] text-sm text-tomato-100 border-[1.5px] border-solid border-gray-500">
           <div className="self-stretch flex flex-row items-center justify-between">
             <div className="flex flex-row items-center justify-start gap-[15px]">
-              <img
+              <Image
                 className="relative w-5 h-5 overflow-hidden shrink-0"
                 alt=""
-                src="/textsquare.svg"
+                src={textsquareIconf}
               />
               <div className="relative font-semibold">Settings</div>
             </div>
-            <img
+            <Image
               className="relative w-[17px] h-[17px] overflow-hidden shrink-0"
               alt=""
-              src="/frame.svg"
+              src={frameIconf}
             />
           </div>
           <div className="self-stretch flex flex-col items-start justify-start py-0 pr-0 pl-[5px] gap-[20px] text-gray-200">
@@ -80,10 +84,10 @@ const Component11Frame418: NextPage<Component11Frame418Type> = ({
               </div>
               <div className="self-stretch rounded-8xs bg-gray-500 overflow-hidden flex flex-row items-end justify-between py-2.5 px-[15px] text-xs">
                 <div className="relative">All Vitamin</div>
-                <img
+                <Image
                   className="relative w-3.5 h-3.5 overflow-hidden shrink-0"
                   alt=""
-                  src="/frame1.svg"
+                  src={frame1Iconf}
                 />
               </div>
             </div>
@@ -104,4 +108,4 @@ const Component11Frame418: NextPage<Component11Frame418Type> = ({
   );
 };
 
-export default Component11Frame418;
+export default SettingComponent;

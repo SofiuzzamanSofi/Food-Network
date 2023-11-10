@@ -16,7 +16,8 @@ import LeftMenuDextop from "../components/LeftMenuDextop";
 import SettingComponent from "../components/SettingComponent";
 import MobileArrow from "../components/MobileArrow";
 import LeftListMobileMenu from "../components/LeftListMobileMenu";
-import Header from "../components/header";
+import Header from "../components/Header";
+
 
 const Screen1 = () => {
     const [settingMenu, setSettingMenu] = useState<boolean>(false);
