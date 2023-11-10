@@ -19,7 +19,7 @@ const LeftMenuDextop: FC<LeftMenuDextopProps> = ({ }) => {
     }, [router]);
 
     return (
-        <section className="hidden lg:flex absolute lg:top-[60px] lg:bottom-0 lg:left-[0px] bg-white w-[70px] flex-col items-center justify-center pt-[15px] px-0 pb-0 box-border gap-[10px] ">
+        <section className="hidden lg:flex bg-white w-[70px] flex-col items-center justify-center pt-[15px] px-0 pb-0 box-border lg:min-h-[calc(100vh-66px)] ">
             <div className="flex flex-col items-center justify-center z-[0]">
                 <div className="flex flex-col items-center justify-start gap-[35px]">
                     <Image

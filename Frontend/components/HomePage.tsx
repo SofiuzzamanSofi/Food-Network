@@ -17,13 +17,13 @@ interface HomePageProps {
 
 const HomePage: FC<HomePageProps> = ({ }) => {
     return (
-        <section className="absolute top-[72px] left-[calc(50%_-_543.2px)] flex flex-col items-start justify-start min-w-[700px] max-w-[1190px] px-4 text-left text-lg text-white-mode-main-text-color font-inter bg-white shadow-2xl">
-            <div className="self-stretch rounded-3xs bg- flex flex-row items-start justify-start p-11 gap-[42px]">
+        <section className="flex flex-col items-start justify-start text-left text-lg text-white-mode-main-text-color font-inter rounded-lg  lg:p-11 min-w-[330px] lg:max-w-[1190px] bg-black">
+            <div className="rounded-3xs bg- flex flex-row items-start justify-start gap-[42px]">
                 <div className="flex flex-col items-start justify-start py-[60px] px-0 gap-[22px]">
-                    <Image className="relative w-7 h-7" alt="" src={facebookIcon} />
-                    <Image className="relative w-7 h-7" alt="" src={linkdedinkIcon} />
-                    <Image className="relative w-7 h-7" alt="" src={twitterIcon} />
-                    <a className="[text-decoration:none] w-7 h-7 flex flex-col items-center justify-end">
+                    <Image className="relative w-7 h-7 cursor-pointer" alt="" src={facebookIcon} />
+                    <Image className="relative w-7 h-7 cursor-pointer" alt="" src={linkdedinkIcon} />
+                    <Image className="relative w-7 h-7 cursor-pointer" alt="" src={twitterIcon} />
+                    <a className="[text-decoration:none] w-7 h-7 flex flex-col items-center justify-end cursor-pointer">
                         <Image
                             className="relative rounded-31xl w-7 h-7"
                             alt=""
@@ -37,29 +37,29 @@ const HomePage: FC<HomePageProps> = ({ }) => {
                     </a>
                 </div>
                 <div className="flex-1 flex flex-col items-start justify-center gap-[62px]">
-                    <div className="self-stretch flex flex-col items-start justify-center gap-[42px]">
-                        <div className="self-stretch flex flex-row items-start justify-start gap-[30px]">
+                    <div className="flex flex-col items-start justify-center gap-[42px]">
+                        <div className="flex flex-row items-start justify-start gap-[30px]">
                             <div className="flex-1 flex flex-col items-start justify-start gap-[30px]">
-                                <div className="self-stretch flex flex-row items-start justify-start text-[38px]">
+                                <div className="flex flex-row items-start justify-start text-[38px]">
                                     <h1 className="m-0 flex-1 relative text-inherit leading-[130%] capitalize font-black font-inherit">
                                         Health benefits of an avocado
                                     </h1>
                                 </div>
-                                <div className="self-stretch rounded-3xs flex flex-col items-start justify-start gap-[15px]">
-                                    <div className="self-stretch flex flex-row items-start justify-start">
+                                <div className="rounded-3xs flex flex-col items-start justify-start gap-[15px]">
+                                    <div className="flex flex-row items-start justify-start">
                                         <b className="relative leading-[160%]">{`Supports eye health: `}</b>
                                     </div>
-                                    <div className="self-stretch relative text-mini leading-[160%]">
+                                    <div className="relative text-mini leading-[160%]">
                                         Spinach contains high levels of vitamin A and other
                                         antioxidants that help maintain healthy vision and protect
                                         against age-related macular degeneration.
                                     </div>
                                 </div>
-                                <div className="self-stretch rounded-3xs flex flex-col items-start justify-start gap-[15px]">
-                                    <div className="self-stretch flex flex-row items-start justify-start">
+                                <div className="rounded-3xs flex flex-col items-start justify-start gap-[15px]">
+                                    <div className="flex flex-row items-start justify-start">
                                         <b className="relative leading-[160%]">{`Supports eye health: `}</b>
                                     </div>
-                                    <div className="self-stretch relative text-mini leading-[160%]">
+                                    <div className="relative text-mini leading-[160%]">
                                         Spinach contains high levels of vitamin A and other
                                         antioxidants that help maintain healthy vision and protect
                                         against age-related macular degeneration.
@@ -67,30 +67,30 @@ const HomePage: FC<HomePageProps> = ({ }) => {
                                 </div>
                             </div>
                             <Image
-                                className="relative rounded-11xl w-[520px] h-80 object-cover"
+                                className="relative rounded-11xl max-w-[520px] h-80 object-cover"
                                 alt=""
                                 src={name24Icon}
                             />
                         </div>
-                        <div className="self-stretch rounded-3xs flex flex-col items-start justify-start gap-[15px]">
-                            <div className="self-stretch flex flex-row items-start justify-start">
+                        <div className="rounded-3xs flex flex-col items-start justify-start gap-[15px]">
+                            <div className="flex flex-row items-start justify-start">
                                 <b className="relative leading-[160%]">{`Supports eye health: `}</b>
                             </div>
-                            <div className="self-stretch relative text-mini leading-[160%]">
+                            <div className="relative text-mini leading-[160%]">
                                 Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration..
                             </div>
                         </div>
-                        <div className="self-stretch flex flex-row items-center justify-start gap-[44px]">
+                        <div className="flex flex-row items-center justify-start gap-[44px]">
                             <Image
-                                className="relative rounded-11xl w-[520px] h-80 object-cover"
+                                className="relative rounded-11xl max-w-[520px] h-80 object-cover"
                                 alt=""
                                 src={name24Icon}
                             />
                             <div className="flex-1 rounded-3xs flex flex-col items-start justify-start gap-[15px]">
-                                <div className="self-stretch flex flex-row items-start justify-start">
+                                <div className="flex flex-row items-start justify-start">
                                     <b className="relative leading-[160%]">{`Supports eye health: `}</b>
                                 </div>
-                                <div className="self-stretch relative text-mini leading-[160%]">{`Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy `}</div>
+                                <div className="relative text-mini leading-[160%]">{`Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy `}</div>
                             </div>
                         </div>
                     </div>

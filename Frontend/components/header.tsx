@@ -16,7 +16,7 @@ const Header: NextPage = () => {
       <div className="flex-1 flex flex-row items-center justify-start">
         <div className="flex flex-row items-center justify-start">
           <Image
-            className="relative w-[71.6px] h-9 overflow-hidden shrink-0"
+            className="relative w-[71.6px] h-9 overflow-hidden shrink-0 cursor-pointer"
             alt=""
             src={foodnetworkIcon}
           />
@@ -31,7 +31,7 @@ const Header: NextPage = () => {
         />
         <div className="absolute top-2 right-2 rounded-8xs bg-tomato-400 flex flex-col items-center justify-start py-1 px-1.5">
           <Image
-            className="relative w-[23.2px] h-[18px] overflow-hidden shrink-0"
+            className="relative w-[23.2px] h-[18px] overflow-hidden shrink-0 cursor-pointer"
             alt=""
             src={frame2Icon}
           />
@@ -41,36 +41,36 @@ const Header: NextPage = () => {
 
       <div className="flex-1 flex flex-row items-center justify-end gap-[24px]">
         <Image
-          className="relative rounded-md w-8 h-8 bg-tomato-400 lg:hidden"
+          className="relative rounded-md w-8 h-8 bg-tomato-400 lg:hidden cursor-pointer"
           alt=""
           src={frame2Icon}
         />
         <Image
-          className="relative rounded-md w-[34px] h-[34px] hidden lg:block"
+          className="relative rounded-md w-[34px] h-[34px] hidden lg:block cursor-pointer"
           alt=""
           src={frame7671Icon}
         />
         <Image
-          className="relative rounded-md w-[34px] h-[34px] hidden lg:block"
+          className="relative rounded-md w-[34px] h-[34px] hidden lg:block cursor-pointer"
           alt=""
           src={frame769Icon}
         />
         <div className="rounded-md bg-tomato-100 hidden flex-row items-center justify-start py-2 px-2.5 relative gap-[5px] border-[2px] border-solid border-tomato-400">
           <Image
-            className="absolute my-0 mx-[!important] top-[calc(50%_-_11px)] left-[calc(50%_-_10.65px)] w-5 h-5 overflow-hidden shrink-0 hidden z-[0]"
+            className="absolute my-0 mx-[!important] top-[calc(50%_-_11px)] left-[calc(50%_-_10.65px)] w-5 h-5 overflow-hidden shrink-0 hidden z-[0] cursor-pointer"
             alt=""
             src={bookmark01Icon}
           />
           <div className="relative font-semibold z-[1]">Support Us</div>
           <div className="flex flex-col items-start justify-start z-[2]">
             <Image
-              className="relative w-[27.3px] h-5" alt=""
+              className="relative w-[27.3px] h-5 cursor-pointer" alt=""
               src={name13Icon}
             />
           </div>
         </div>
         <Image
-          className="relative rounded-md w-8 h-8"
+          className="relative rounded-md w-8 h-8 cursor-pointer"
           alt=""
           src={frame765Icon}
         />

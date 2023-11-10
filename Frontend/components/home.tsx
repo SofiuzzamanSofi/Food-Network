@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { useState, useCallback, useEffect } from "react";
 import { TextField, InputAdornment, Icon, IconButton } from "@mui/material";
-import Component11Frame418 from "./component11-frame418";
+import Component11Frame418 from "./SettingComponent";
 import { useRouter } from "next/router";
 import Property1Default from "./property1-default";
 import Header from "./header";

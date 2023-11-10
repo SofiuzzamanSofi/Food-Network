@@ -3,30 +3,34 @@ import { useMemo, type CSSProperties } from "react";
 
 type Component11Frame418Type = {
   /** Style props */
-  component11Frame418Height?: CSSProperties["height"];
-  component11Frame418Position?: CSSProperties["position"];
-  component11Frame418Top?: CSSProperties["top"];
-  component11Frame418Right?: CSSProperties["right"];
+  settingComponentHeight?: CSSProperties["height"];
+  settingComponentWidth?: CSSProperties["width"];
+  settingComponentPosition?: CSSProperties["position"];
+  settingComponentTop?: CSSProperties["top"];
+  settingComponentRight?: CSSProperties["right"];
 };
 
 const Component11Frame418: NextPage<Component11Frame418Type> = ({
-  component11Frame418Height,
-  component11Frame418Position,
-  component11Frame418Top,
-  component11Frame418Right,
+  settingComponentHeight,
+  settingComponentWidth,
+  settingComponentPosition,
+  settingComponentTop,
+  settingComponentRight,
 }) => {
   const component11Frame418Style: CSSProperties = useMemo(() => {
     return {
-      height: component11Frame418Height,
-      position: component11Frame418Position,
-      top: component11Frame418Top,
-      right: component11Frame418Right,
+      height: settingComponentHeight,
+      width: settingComponentWidth,
+      position: settingComponentPosition,
+      top: settingComponentTop,
+      right: settingComponentRight,
     };
   }, [
-    component11Frame418Height,
-    component11Frame418Position,
-    component11Frame418Top,
-    component11Frame418Right,
+    settingComponentHeight,
+    settingComponentWidth,
+    settingComponentPosition,
+    settingComponentTop,
+    settingComponentRight,
   ]);
 
   return (
