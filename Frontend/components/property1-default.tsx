@@ -73,7 +73,8 @@ const Property1Default: NextPage<Property1DefaultType> = ({
             <div className="self-stretch flex-1 overflow-hidden flex flex-col items-start justify-start gap-[10px] z-[2] text-gray-200">
                 <div className="self-stretch relative font-medium">Fruits List</div>
                 <div className="self-stretch flex flex-col items-start justify-start gap-[5px] text-sm">
-                    <div className="self-stretch rounded-3xs flex flex-row items-center justify-start py-2 px-2.5 gap-[10px] border-[1.5px] border-solid border-tomato-100">
+                    <div className="self-stretch rounded-3xs flex flex-row items-center justify-start py-2 px-2.5 gap-[10px] border-[1.5px] border-solid border-white hover:border-tomato-100 cursor-pointer">
+
                         <div className="self-stretch flex-1 flex flex-row items-center justify-start gap-[15px]">
                             <div className="rounded-6xl flex flex-row items-center justify-center relative gap-[10px]">
                                 <div className="relative rounded-2xs bg-orange-200 w-[40.3px] h-[40.3px] [transform:_rotate(45deg)] [transform-origin:0_0] z-[0]" />
@@ -103,7 +104,7 @@ const Property1Default: NextPage<Property1DefaultType> = ({
                             src={dotMenuIcon}
                         />
                     </div>
-                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px]">
+                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px] border-[1.5px] border-solid border-white hover:border-tomato-100 cursor-pointer">
                         <div className="self-stretch flex-1 flex flex-row items-center justify-start gap-[15px]">
                             <div className="rounded-6xl flex flex-row items-center justify-center relative gap-[10px]">
                                 <div className="relative rounded-2xs bg-tomato-300 w-[40.3px] h-[40.3px] [transform:_rotate(45deg)] [transform-origin:0_0] z-[0]" />
@@ -133,7 +134,7 @@ const Property1Default: NextPage<Property1DefaultType> = ({
                             src={dotMenuIcon}
                         />
                     </div>
-                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px]">
+                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px] border-[1.5px] border-solid border-white hover:border-tomato-100 cursor-pointer">
                         <div className="self-stretch flex-1 flex flex-row items-center justify-start gap-[15px]">
                             <div className="rounded-6xl flex flex-row items-center justify-center relative gap-[10px]">
                                 <div className="relative rounded-2xs bg-olivedrab w-[40.3px] h-[40.3px] [transform:_rotate(45deg)] [transform-origin:0_0] z-[0]" />
@@ -163,7 +164,7 @@ const Property1Default: NextPage<Property1DefaultType> = ({
                             src={dotMenuIcon}
                         />
                     </div>
-                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px]">
+                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px] border-[1.5px] border-solid border-white hover:border-tomato-100 cursor-pointer">
                         <div className="self-stretch flex-1 flex flex-row items-center justify-start gap-[15px]">
                             <div className="rounded-6xl flex flex-row items-center justify-center relative gap-[10px]">
                                 <div className="relative rounded-2xs bg-olivedrab w-[40.3px] h-[40.3px] [transform:_rotate(45deg)] [transform-origin:0_0] z-[0]" />
@@ -193,7 +194,7 @@ const Property1Default: NextPage<Property1DefaultType> = ({
                             src={dotMenuIcon}
                         />
                     </div>
-                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px]">
+                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px] border-[1.5px] border-solid border-white hover:border-tomato-100 cursor-pointer">
                         <div className="self-stretch flex-1 flex flex-row items-center justify-start gap-[15px]">
                             <div className="rounded-6xl flex flex-row items-center justify-center relative gap-[10px]">
                                 <div className="relative rounded-2xs bg-olivedrab w-[40.3px] h-[40.3px] [transform:_rotate(45deg)] [transform-origin:0_0] z-[0]" />
@@ -223,7 +224,7 @@ const Property1Default: NextPage<Property1DefaultType> = ({
                             src={dotMenuIcon}
                         />
                     </div>
-                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px]">
+                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px] border-[1.5px] border-solid border-white hover:border-tomato-100 cursor-pointer">
                         <div className="self-stretch flex-1 flex flex-row items-center justify-start gap-[15px]">
                             <div className="rounded-6xl flex flex-row items-center justify-center relative gap-[10px]">
                                 <div className="relative rounded-2xs bg-olivedrab w-[40.3px] h-[40.3px] [transform:_rotate(45deg)] [transform-origin:0_0] z-[0]" />
@@ -253,7 +254,7 @@ const Property1Default: NextPage<Property1DefaultType> = ({
                             src={dotMenuIcon}
                         />
                     </div>
-                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px]">
+                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px] border-[1.5px] border-solid border-white hover:border-tomato-100 cursor-pointer">
                         <div className="self-stretch flex-1 flex flex-row items-center justify-start gap-[15px]">
                             <div className="rounded-6xl flex flex-row items-center justify-center relative gap-[10px]">
                                 <div className="relative rounded-2xs bg-olivedrab w-[40.3px] h-[40.3px] [transform:_rotate(45deg)] [transform-origin:0_0] z-[0]" />
@@ -283,7 +284,7 @@ const Property1Default: NextPage<Property1DefaultType> = ({
                             src={dotMenuIcon}
                         />
                     </div>
-                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px]">
+                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px] border-[1.5px] border-solid border-white hover:border-tomato-100 cursor-pointer">
                         <div className="self-stretch flex-1 flex flex-row items-center justify-start gap-[15px]">
                             <div className="rounded-6xl flex flex-row items-center justify-center relative gap-[10px]">
                                 <div className="relative rounded-2xs bg-olivedrab w-[40.3px] h-[40.3px] [transform:_rotate(45deg)] [transform-origin:0_0] z-[0]" />
@@ -313,7 +314,7 @@ const Property1Default: NextPage<Property1DefaultType> = ({
                             src={dotMenuIcon}
                         />
                     </div>
-                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px]">
+                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px] border-[1.5px] border-solid border-white hover:border-tomato-100 cursor-pointer">
                         <div className="self-stretch flex-1 flex flex-row items-center justify-start gap-[15px]">
                             <div className="rounded-6xl flex flex-row items-center justify-center relative gap-[10px]">
                                 <div className="relative rounded-2xs bg-olivedrab w-[40.3px] h-[40.3px] [transform:_rotate(45deg)] [transform-origin:0_0] z-[0]" />
@@ -343,7 +344,7 @@ const Property1Default: NextPage<Property1DefaultType> = ({
                             src={dotMenuIcon}
                         />
                     </div>
-                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px]">
+                    <div className="self-stretch rounded-6xs bg-gray-800 flex flex-row items-center justify-start py-[9px] px-2.5 gap-[10px] border-[1.5px] border-solid border-white hover:border-tomato-100 cursor-pointer">
                         <div className="self-stretch flex-1 flex flex-row items-center justify-start gap-[15px]">
                             <div className="rounded-6xl flex flex-row items-center justify-center relative gap-[10px]">
                                 <div className="relative rounded-2xs bg-olivedrab w-[40.3px] h-[40.3px] [transform:_rotate(45deg)] [transform-origin:0_0] z-[0]" />

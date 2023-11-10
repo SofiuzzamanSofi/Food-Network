@@ -81,7 +81,7 @@ const Home1: NextPage = () => {
           </div>
         </div>
       </div>
-      <MobileBottomMenu />
+      {/* <MobileBottomMenu /> */}
       <div className="absolute top-[161px] left-[13px] rounded-lg bg-white w-[330px] flex flex-row items-center justify-between py-2.5 px-[15px] box-border text-xs">
         <div className="flex flex-row items-center justify-start gap-[10px]">
           <div className="relative w-5 h-5 overflow-hidden shrink-0">
