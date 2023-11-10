@@ -6,11 +6,8 @@ import nameIcon from "../public/name.svg";
 import start2Icon from "../public/star2.svg";
 import start3Icon from "../public/star3.svg";
 import applePic from "../public/name2@2x.png";
-import papayaPic from "../public/name24@2x.png";
-
-
+import papayaPic from "../public/name1@2x.png";
 import Image from "next/image";
-import MobileBottomMenu from "../components/MobileBottomMenu";
 
 interface HomePageProps {
 
@@ -72,9 +69,9 @@ const HomePage: FC<HomePageProps> = ({ }) => {
                                 </div>
                             </div>
                             <Image
-                                className="w-full max-w-[520px] h-full max-h-80 border"
+                                className="w-full max-w-[520px] h-full max-h-80"
                                 alt=""
-                                src={applePic}
+                                src={papayaPic}
                             />
                         </div>
                         <div className="flex flex-col items-start justify-start gap-[15px]">
@@ -87,9 +84,9 @@ const HomePage: FC<HomePageProps> = ({ }) => {
                         </div>
                         <div className="flex flex-col xl:flex-row items-start justify-start gap-[30px]">
                             <Image
-                                className="w-full max-w-[520px] h-full max-h-80 border"
+                                className="w-full max-w-[520px] h-full max-h-80"
                                 alt=""
-                                src={papayaPic}
+                                src={applePic}
                             />
                             <div className="flex-1 flex flex-col items-start justify-start gap-[15px]">
                                 <div className="flex flex-row items-start justify-start">
