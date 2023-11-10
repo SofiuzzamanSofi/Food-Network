@@ -35,7 +35,7 @@ const Component11Frame418: NextPage<Component11Frame418Type> = ({
 
   return (
     <div
-      className="rounded-3xs bg-white w-[300px] h-[615px] overflow-hidden flex flex-col items-start justify-start p-[15px] box-border text-left text-base text-gray-200 font-inter"
+      className="rounded-3xs bg-white w-[300px] h-[615px] overflow-hidden flex flex-col items-start justify-start p-[15px] box-border text-left text-base text-gray-200 font-inter top-[125px] lg:top-[72px] shadow-2xl"
       style={component11Frame418Style}
     >
       <div className="self-stretch flex flex-col items-center justify-start gap-[12px]">

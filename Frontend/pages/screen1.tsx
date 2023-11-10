@@ -17,6 +17,7 @@ import MobileBottomMenu from "../components/MobileBottomMenu";
 import HomePage from "../components/HomePage";
 import LeftMenuDextop from "../components/LeftMenuDextop";
 import SettingComponent from "../components/SettingComponent";
+import MobileArrow from "../components/MobileArrow";
 
 
 
@@ -37,6 +38,8 @@ const Screen1: NextPage = () => {
 
             {/* upper-header  */}
             <Header setSettingMenu={setSettingMenu} />
+
+            <MobileArrow />
 
             <section
                 className="flex"
@@ -75,7 +78,7 @@ const Screen1: NextPage = () => {
                             settingComponentHeight="262px"
                             settingComponentWidth="300px"
                             settingComponentPosition="absolute"
-                            settingComponentTop="72px"
+                            // settingComponentTop="72px"
                             settingComponentRight="0px"
                         />
                     }

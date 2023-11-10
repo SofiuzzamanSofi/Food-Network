@@ -3,9 +3,10 @@ import facebookIcon from "../public/facebook.svg";
 import linkdedinkIcon from "../public/linkedin.svg";
 import twitterIcon from "../public/twitter.svg";
 import nameIcon from "../public/name.svg";
-import name24Icon from "../public/name24@2x.png";
 import start2Icon from "../public/star2.svg";
 import start3Icon from "../public/star3.svg";
+import applePic from "../public/name2@2x.png";
+import papayaPic from "../public/name24@2x.png";
 
 
 import Image from "next/image";
@@ -17,9 +18,11 @@ interface HomePageProps {
 
 const HomePage: FC<HomePageProps> = ({ }) => {
     return (
-        <section className="shrink-3 flex flex-col items-start justify-start text-left text-lg text-white-mode-main-text-color font-inter rounded-lg  lg:p-11 min-w-[330px] lg:max-w-[1190px] bg-white">
-            <div className="rounded-3xs bg- flex flex-row items-start justify-start gap-[42px]">
-                <div className="flex flex-col items-start justify-start py-[60px] px-0 gap-[22px]">
+        <section className="flex flex-col items-start justify-start text-left text-lg text-white-mode-main-text-color font-inter rounded-lg min-w-[330px] p-3 xl:max-w-[1190px] xl:p-11 bg-white">
+            <div className="lg:flex rounded-3xs flex-row items-start justify-start gap-[42px]">
+
+                {/* share icons desktop show */}
+                <div className="hidden 2xl:flex flex-col items-start justify-start py-[60px] px-0 gap-[22px]">
                     <Image className="relative w-7 h-7 cursor-pointer" alt="" src={facebookIcon} />
                     <Image className="relative w-7 h-7 cursor-pointer" alt="" src={linkdedinkIcon} />
                     <Image className="relative w-7 h-7 cursor-pointer" alt="" src={twitterIcon} />
@@ -36,10 +39,12 @@ const HomePage: FC<HomePageProps> = ({ }) => {
                         </div>
                     </a>
                 </div>
-                <div className="flex-1 flex flex-col items-start justify-center gap-[62px]">
+
+                <div className="flex-1 flex flex-col items-start justify-center gap-[24px] lg:gap-[62px]">
                     <div className="flex flex-col items-start justify-center gap-[42px]">
-                        <div className="flex flex-row items-start justify-start gap-[30px]">
-                            <div className="flex-1 flex flex-col items-start justify-start gap-[30px]">
+                        <div className="flex flex-col xl:flex-row items-start justify-start gap-[30px]">
+                            <div className="flex-1 flex flex-col items-start justify-start gap-[15px]">
+
                                 <div className="flex flex-row items-start justify-start text-[38px]">
                                     <h1 className="m-0 flex-1 relative text-inherit leading-[130%] capitalize font-black font-inherit">
                                         Health benefits of an avocado
@@ -67,12 +72,12 @@ const HomePage: FC<HomePageProps> = ({ }) => {
                                 </div>
                             </div>
                             <Image
-                                className="relative rounded-11xl max-w-[520px] h-80 object-cover"
+                                className="w-full max-w-[520px] h-full max-h-80 border"
                                 alt=""
-                                src={name24Icon}
+                                src={applePic}
                             />
                         </div>
-                        <div className="rounded-3xs flex flex-col items-start justify-start gap-[15px]">
+                        <div className="flex flex-col items-start justify-start gap-[15px]">
                             <div className="flex flex-row items-start justify-start">
                                 <b className="relative leading-[160%]">{`Supports eye health: `}</b>
                             </div>
@@ -80,13 +85,13 @@ const HomePage: FC<HomePageProps> = ({ }) => {
                                 Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration.. Spinach contains high levels of vitamin A and other antioxidants that help maintain healthy vision and protect against age-related macular degeneration..
                             </div>
                         </div>
-                        <div className="flex flex-row items-center justify-start gap-[44px]">
+                        <div className="flex flex-col xl:flex-row items-start justify-start gap-[30px]">
                             <Image
-                                className="relative rounded-11xl max-w-[520px] h-80 object-cover"
+                                className="w-full max-w-[520px] h-full max-h-80 border"
                                 alt=""
-                                src={name24Icon}
+                                src={papayaPic}
                             />
-                            <div className="flex-1 rounded-3xs flex flex-col items-start justify-start gap-[15px]">
+                            <div className="flex-1 flex flex-col items-start justify-start gap-[15px]">
                                 <div className="flex flex-row items-start justify-start">
                                     <b className="relative leading-[160%]">{`Supports eye health: `}</b>
                                 </div>
@@ -127,6 +132,25 @@ const HomePage: FC<HomePageProps> = ({ }) => {
                                 />
                             </div>
                         </div>
+                    </div>
+
+                    {/* share icons mobile show */}
+                    <div className="2xl:hidden flex flex-row items-center justify-center px-0 gap-[22px]">
+                        <Image className="relative w-7 h-7 cursor-pointer" alt="" src={facebookIcon} />
+                        <Image className="relative w-7 h-7 cursor-pointer" alt="" src={linkdedinkIcon} />
+                        <Image className="relative w-7 h-7 cursor-pointer" alt="" src={twitterIcon} />
+                        <a className="[text-decoration:none] mt-[-25px] w-7 h-7 flex flex-col items-center justify-end cursor-pointer ">
+                            <Image
+                                className="relative rounded-31xl w-7 h-7"
+                                alt=""
+                                src={nameIcon}
+                            />
+                            <div className="flex flex-row items-start justify-start gap-[2px] mt-[-15px]">
+                                <div className="relative rounded-[50%] bg-white w-[3.4px] h-[3.4px]" />
+                                <div className="relative rounded-[50%] bg-white w-[3.4px] h-[3.4px]" />
+                                <div className="relative rounded-[50%] bg-white w-[3.4px] h-[3.4px]" />
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

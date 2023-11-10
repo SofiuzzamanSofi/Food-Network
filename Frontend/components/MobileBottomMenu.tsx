@@ -19,7 +19,7 @@ const MobileBottomMenu: FC<MobileBottomMenuProps> = ({ }) => {
 
     return (
         <div className="flex lg:hidden absolute bottom-[0px] left-[0px] right-0 rounded-t-3xs rounded-b-none bg-white min-w-[360px]  flex-row items-center justify-center py-2.5 px-0 box-border gap-[10px]">
-            <div className="flex flex-row items-center justify-center z-[50]">
+            <div className="flex flex-row items-center justify-center z-[40]">
                 <div className="flex flex-row items-start justify-center gap-[35px]">
                     <Image
                         className="relative rounded-md w-9 h-9 shrink-0 cursor-pointer"
