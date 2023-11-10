@@ -1,6 +1,5 @@
 import { useState } from "react";
 import LeftDesktopMenu from "../components/LeftDesktopMenu";
-import Header from "../components/header";
 import name1Icon from "../public/name3@2x.png";
 import name2Icon from "../public/name4@2x.png";
 import name3Icon from "../public/name5@2x.png";
@@ -17,6 +16,7 @@ import LeftMenuDextop from "../components/LeftMenuDextop";
 import SettingComponent from "../components/SettingComponent";
 import MobileArrow from "../components/MobileArrow";
 import LeftListMobileMenu from "../components/LeftListMobileMenu";
+import Header from "../components/header";
 
 const Screen1 = () => {
     const [settingMenu, setSettingMenu] = useState<boolean>(false);

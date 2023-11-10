@@ -4,7 +4,7 @@ import { FC } from 'react';
 
 interface MobileArrowProps {
     setMobileListMenu: React.Dispatch<React.SetStateAction<boolean>>
-};
+}
 
 const MobileArrow: FC<MobileArrowProps> = ({ setMobileListMenu }) => {
     return (

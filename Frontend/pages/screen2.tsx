@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import { useState } from "react";
-import Header from "../components/header";
 import MobileBottomMenu from "../components/MobileBottomMenu";
 import LeftMenuDextop from "../components/LeftMenuDextop";
 import SettingComponent from "../components/SettingComponent";
 import EmptyPage from "../components/EmptyPage";
+import Header from "../components/header";
 
 
 const Screen2: NextPage = () => {

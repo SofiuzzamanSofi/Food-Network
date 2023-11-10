@@ -51,7 +51,7 @@ const LeftListMobileMenu: NextPage<LeftListMobileMenuType> = ({
 
     return (
         <section
-            className="lg:hidden absolute top-0 bottom-0 left-0 right-0 min-h-screen min-w-full bg-gray-300 w-[360px] h-[800px] z-50 "
+            className="lg:hidden absolute top-0 bottom-0 left-0 right-0 min-h-screen min-w-full w-[360px] h-[800px] z-50 "
             onClick={(e) => {
                 if (e.target !== e.currentTarget) {
                     console.log('e.carrentTarget:', e.currentTarget);

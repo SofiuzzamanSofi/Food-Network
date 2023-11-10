@@ -1,5 +1,4 @@
-import { FC, useCallback } from 'react';
-import router, { useRouter } from "next/router";
+import { FC } from 'react';
 import Image from 'next/image';
 import iconIcon from "../public/icons.svg";
 import icon1Icon from "../public/icons1.svg";
@@ -12,11 +11,6 @@ interface MobileBottomMenuProps {
 };
 
 const MobileBottomMenu: FC<MobileBottomMenuProps> = ({ }) => {
-
-    const onIcons1Click = useCallback(() => {
-        router.push("/");
-    }, [router]);
-
     return (
         <div className="flex lg:hidden absolute bottom-[0px] left-[0px] right-0 rounded-t-3xs rounded-b-none bg-white min-w-[360px]  flex-row items-center justify-center py-2.5 px-0 box-border gap-[10px]">
             <div className="flex flex-row items-center justify-center z-[40]">
@@ -25,13 +19,11 @@ const MobileBottomMenu: FC<MobileBottomMenuProps> = ({ }) => {
                         className="relative rounded-md w-9 h-9 shrink-0 cursor-pointer"
                         alt=""
                         src={iconIcon}
-                        onClick={onIcons1Click}
                     />
                     <Image
                         className="relative rounded-md w-9 h-9 shrink-0 cursor-pointer"
                         alt=""
                         src={icon1Icon}
-                        onClick={onIcons1Click}
                     />
                     <Image
                         className="relative rounded-md w-[34px] h-[34px] cursor-pointer"

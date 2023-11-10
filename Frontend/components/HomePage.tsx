@@ -38,6 +38,8 @@ const HomePage: FC<HomePageProps> = ({ }) => {
                 </div>
 
                 <div className="flex-1 flex flex-col items-start justify-center gap-[24px] lg:gap-[62px]">
+
+                    {/* image and text of homepage */}
                     <div className="flex flex-col items-start justify-center gap-[42px]">
                         <div className="flex flex-col xl:flex-row items-start justify-start gap-[30px]">
                             <div className="flex-1 flex flex-col items-start justify-start gap-[15px]">

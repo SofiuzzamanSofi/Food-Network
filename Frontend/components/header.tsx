@@ -5,7 +5,6 @@ import frame2Icon from "../public/frame2.svg"
 import frame7671Icon from "../public/frame-7671.svg"
 import frame769Icon from "../public/frame-769.svg"
 import frame765Icon from "../public/frame-765.svg"
-import frame768Icon from "../public/frame-768.svg"
 import name13Icon from "../public/name13.svg"
 import bookmark01Icon from "../public/bookmark01.svg"
 
@@ -40,7 +39,6 @@ const Header: FC<HeaderProps> = ({ setSettingMenu }) => {
           />
         </div>
       </div>
-
 
       <div className="flex-1 flex flex-row items-center justify-end gap-[24px]">
         <Image
