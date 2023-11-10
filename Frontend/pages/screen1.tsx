@@ -59,9 +59,10 @@ const Screen1: NextPage = () => {
                     name8={name8Icon}
                     name9={name9Icon}
                     name10={name10Icon}
-                // leftListMobileMenuPosition="absolute"
-                // leftListMobileMenuTop="72px"
-                // leftListMobileMenuLeft="84.8px"
+                    // leftListMobileMenuPosition="absolute"
+                    // leftListMobileMenuTop="72px"
+                    // leftListMobileMenuLeft="84.8px"
+                    setMobileListMenu={setMobileListMenu}
                 />
             }
 

@@ -17,6 +17,7 @@ type LeftListMobileMenuType = {
     name8: StaticImageData;
     name9: StaticImageData;
     name10: StaticImageData;
+    setMobileListMenu: React.Dispatch<React.SetStateAction<boolean>>;
 
     /** Style props */
     leftListMobileMenuPosition?: CSSProperties["position"];
@@ -38,6 +39,7 @@ const LeftListMobileMenu: NextPage<LeftListMobileMenuType> = ({
     leftListMobileMenuPosition,
     leftListMobileMenuTop,
     leftListMobileMenuLeft,
+    setMobileListMenu,
 }) => {
     const leftListMobileMenuStyle: CSSProperties = useMemo(() => {
         return {
@@ -48,7 +50,17 @@ const LeftListMobileMenu: NextPage<LeftListMobileMenuType> = ({
     }, [leftListMobileMenuPosition, leftListMobileMenuTop, leftListMobileMenuLeft]);
 
     return (
-        <section className="lg:hidden absolute top-0 bottom-0 left-0 right-0 min-h-screen min-w-full bg-gray-300 w-[360px] h-[800px] z-50 ">
+        <section
+            className="lg:hidden absolute top-0 bottom-0 left-0 right-0 min-h-screen min-w-full bg-gray-300 w-[360px] h-[800px] z-50 "
+            onClick={(e) => {
+                if (e.target !== e.currentTarget) {
+                    console.log('e.carrentTarget:', e.currentTarget);
+                    return;
+                }
+                console.log("prev");
+                setMobileListMenu((prev) => !prev)
+            }}
+        >
             <div
                 className="flex shrink-0 lg:hidden rounded-mini bg-white w-[300px] h-[830px] flex-col items-center justify-start p-[15px] box-border gap-[15px] text-left text-xs text-tomato-100 font-inter shadow-2xl"
                 style={leftListMobileMenuStyle}
