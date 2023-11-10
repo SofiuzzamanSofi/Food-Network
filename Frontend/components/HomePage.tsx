@@ -15,7 +15,7 @@ interface HomePageProps {
 
 const HomePage: FC<HomePageProps> = ({ }) => {
     return (
-        <section className="flex flex-col items-start justify-start text-left text-lg text-white-mode-main-text-color font-inter rounded-lg min-w-[330px] p-3 xl:max-w-[1190px] xl:p-11 bg-white">
+        <section className="flex flex-col items-start justify-start text-left text-lg text-white-mode-main-text-color font-inter rounded-lg min-w-[330px] p-3 xl:max-w-[1190px] xl:p-11 bg-white z-0">
             <div className="lg:flex rounded-3xs flex-row items-start justify-start gap-[42px]">
 
                 {/* share icons desktop show */}

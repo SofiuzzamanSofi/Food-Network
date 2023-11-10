@@ -18,6 +18,7 @@ import HomePage from "../components/HomePage";
 import LeftMenuDextop from "../components/LeftMenuDextop";
 import SettingComponent from "../components/SettingComponent";
 import MobileArrow from "../components/MobileArrow";
+import LeftListMobileMenu from "../components/LeftListMobileMenu";
 
 
 
@@ -34,6 +35,9 @@ const Screen1: NextPage = () => {
         router.push("/");
     }, [router]);
 
+    console.log('mobileListMenu:', mobileListMenu);
+    // console.log('settingMenu:', settingMenu);
+
     return (
         <div className="relative mx-auto max-w-[120rem] min-h-screen bg-white overflow-scroll ">
 
@@ -41,6 +45,26 @@ const Screen1: NextPage = () => {
             <Header setSettingMenu={setSettingMenu} />
 
             <MobileArrow setMobileListMenu={setMobileListMenu} />
+
+            {
+                mobileListMenu &&
+                <LeftListMobileMenu
+                    name1={name1Icon}
+                    name2={name2Icon}
+                    name3={name3Icon}
+                    name4={name4Icon}
+                    name5={name5Icon}
+                    name6={name6Icon}
+                    name7={name7Icon}
+                    name8={name8Icon}
+                    name9={name9Icon}
+                    name10={name10Icon}
+                // leftListMobileMenuPosition="absolute"
+                // leftListMobileMenuTop="72px"
+                // leftListMobileMenuLeft="84.8px"
+                />
+            }
+
 
             <section
                 className="flex"
@@ -51,7 +75,7 @@ const Screen1: NextPage = () => {
                 <section
                     className="grow bg-whitesmoke-300 min-h-[calc(100vh-60px)] rounded-l-xl lg:flex gap-4 p-3.5 pb-[3.75rem] overflow-x-scroll"
                 >
-                    {/* left side list menu  */}
+                    {/* left side list menu DESKTOP */}
                     <Property1Default
                         name1={name1Icon}
                         name2={name2Icon}
@@ -63,7 +87,7 @@ const Screen1: NextPage = () => {
                         name8={name8Icon}
                         name9={name9Icon}
                         name10={name10Icon}
-                    // property1DefaultPosition="relative"
+                    // property1DefaultPosition="absolute"
                     // property1DefaultTop="72px"
                     // property1DefaultLeft="84.8px"
                     />

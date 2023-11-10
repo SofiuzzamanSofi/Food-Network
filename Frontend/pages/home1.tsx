@@ -14,8 +14,8 @@ const Home1: NextPage = () => {
   }, [router]);
 
   return (
-    <div className="relative bg-white w-full h-[865px] overflow-hidden text-left text-sm text-white-mode-main-text-color font-inter">
-      <div className="absolute top-[152px] left-[calc(50%_-_180px)] bg-whitesmoke-300 w-[360px] h-[1682.1px]" />
+    <div className="relative  w-full h-[865px] overflow-hidden text-left text-sm text-white-mode-main-text-color font-inter">
+      <div className="absolute top-[152px] left-[calc(50%_-_180px)] w-[360px] h-[1682.1px]" />
       <div className="absolute top-[210px] left-[calc(50%_-_165px)] w-[330px] flex flex-col items-start justify-start">
         <div className="self-stretch rounded-3xs bg-white flex flex-col items-start justify-start py-[15px] px-3 gap-[24px]">
           <div className="self-stretch flex flex-col items-start justify-center gap-[44px]">
@@ -82,7 +82,7 @@ const Home1: NextPage = () => {
         </div>
       </div>
       {/* <MobileBottomMenu /> */}
-      <div className="absolute top-[161px] left-[13px] rounded-lg bg-white w-[330px] flex flex-row items-center justify-between py-2.5 px-[15px] box-border text-xs">
+      {/* <div className="absolute top-[161px] left-[13px] rounded-lg bg-white w-[330px] flex flex-row items-center justify-between py-2.5 px-[15px] box-border text-xs">
         <div className="flex flex-row items-center justify-start gap-[10px]">
           <div className="relative w-5 h-5 overflow-hidden shrink-0">
             <div className="absolute h-[71%] w-[70%] top-[14.5%] right-[15%] bottom-[14.5%] left-[15%]">
@@ -99,7 +99,7 @@ const Home1: NextPage = () => {
           alt=""
           src="/frame-1000003599.svg"
         />
-      </div>
+      </div> */}
       <WebsiteCard />
       <div className="absolute top-[100px] left-[calc(50%_-_180px)] bg-white w-[360px] flex flex-row items-center justify-between py-2.5 pr-[15px] pl-[26px] box-border text-white">
         <div className="flex-1 flex flex-row items-center justify-start">
