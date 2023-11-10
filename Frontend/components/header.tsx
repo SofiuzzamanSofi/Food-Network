@@ -1,12 +1,12 @@
 import { FC } from "react";
 import Image from "next/image";
-import foodnetworkIcon from "../public/foodnetwork-1.svg"
-import frame2Icon from "../public/frame2.svg"
-import frame7671Icon from "../public/frame-7671.svg"
-import frame769Icon from "../public/frame-769.svg"
-import frame765Icon from "../public/frame-765.svg"
-import name13Icon from "../public/name13.svg"
-import bookmark01Icon from "../public/bookmark01.svg"
+import foodnetworkIcon from "../assets/foodnetwork-1.svg"
+import frame2Icon from "../assets/frame2.svg"
+import frame7671Icon from "../assets/frame-7671.svg"
+import frame769Icon from "../assets/frame-769.svg"
+import frame765Icon from "../assets/frame-765.svg"
+import name13Icon from "../assets/name13.svg"
+import bookmark01Icon from "../assets/bookmark01.svg"
 
 interface HeaderProps {
   setSettingMenu: React.Dispatch<React.SetStateAction<boolean>>

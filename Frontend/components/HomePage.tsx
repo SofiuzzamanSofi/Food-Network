@@ -1,12 +1,12 @@
 import { FC } from "react";
-import facebookIcon from "../public/facebook.svg";
-import linkdedinkIcon from "../public/linkedin.svg";
-import twitterIcon from "../public/twitter.svg";
-import nameIcon from "../public/name.svg";
-import start2Icon from "../public/star2.svg";
-import start3Icon from "../public/star3.svg";
-import applePic from "../public/name2@2x.png";
-import papayaPic from "../public/name1@2x.png";
+import facebookIcon from "../assets/facebook.svg";
+import linkdedinkIcon from "../assets/linkedin.svg";
+import twitterIcon from "../assets/twitter.svg";
+import nameIcon from "../assets/name.svg";
+import start2Icon from "../assets/star2.svg";
+import start3Icon from "../assets/star3.svg";
+import applePic from "../assets/name2@2x.png";
+import papayaPic from "../assets/name1@2x.png";
 import Image from "next/image";
 
 interface HomePageProps {

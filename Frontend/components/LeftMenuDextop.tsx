@@ -1,9 +1,9 @@
 import { FC } from 'react';
-import iconIcon from "../public/icons.svg";
-import icon1Icon from "../public/icons1.svg";
-import icon6Icon from "../public/icons6.svg";
-import icon7Icon from "../public/icons7.svg";
-import icon8Icon from "../public/icons8.svg";
+import iconIcon from "../assets/icons.svg";
+import icon1Icon from "../assets/icons1.svg";
+import icon6Icon from "../assets/icons6.svg";
+import icon7Icon from "../assets/icons7.svg";
+import icon8Icon from "../assets/icons8.svg";
 import Image from "next/image";
 
 interface LeftMenuDextopProps {

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import frameIcon from "../public/frame-1000003599.svg"
+import frameIcon from "../assets/frame-1000003599.svg"
 import { FC } from 'react';
 
 interface MobileArrowProps {

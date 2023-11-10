@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 import Image, { StaticImageData } from "next/image";
 import { useMemo, type CSSProperties } from "react";
 
-import frame2Icon from "../public/frame2.svg"
-import fi891094Icon from "../public/fi-891094.svg"
-import dotMenuIcon from "../public/dot-menu.svg"
+import frame2Icon from "../assets/frame2.svg"
+import fi891094Icon from "../assets/fi-891094.svg"
+import dotMenuIcon from "../assets/dot-menu.svg"
 
 type LeftListMobileMenuType = {
     name1: StaticImageData;
