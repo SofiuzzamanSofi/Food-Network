@@ -7,7 +7,7 @@ Food-Network
 This is a [Next.JS](https://nextjs.org/) project create with [`npx create-next-app my-yearn-app -e with-typescript
 `](https://nextjs.org).
 
-### Frontend-Live: [live-Preview](https://loom.com/share/cc0cfc3ddf8a4fc1ba3af7ae2511aaf4)
+### Frontend-Live: [live-Video-Preview](https://loom.com/share/cc0cfc3ddf8a4fc1ba3af7ae2511aaf4)
 
 <br/>
 
