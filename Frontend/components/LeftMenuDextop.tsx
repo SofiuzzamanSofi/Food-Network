@@ -12,7 +12,7 @@ interface LeftMenuDextopProps {
 
 const LeftMenuDextop: FC<LeftMenuDextopProps> = ({ }) => {
     return (
-        <section className="hidden xl:flex bg-white w-[70px] flex-col items- justify-evenly pt-[15px] px-0 pb-0 box-border lg:min-h-[calc(100vh-66px)] ">
+        <section className="shrink-0 hidden lg:flex bg-white w-[70px] flex-col items- justify-evenly pt-[15px] px-0 pb-0 box-border lg:min-h-[calc(100vh-66px)] ">
             <div className="flex flex-col items-center justify-center z-[0]">
                 <div className="flex flex-col items-center justify-start gap-[35px]">
                     <Image
