@@ -24,7 +24,7 @@ import LeftListMobileMenu from "../components/LeftListMobileMenu";
 
 const Screen1: NextPage = () => {
     const [showPassword, setShowPassword] = useState<boolean>(false);
-    const [settingMenu, setSettingMenu] = useState<boolean>(true);
+    const [settingMenu, setSettingMenu] = useState<boolean>(false);
     const [mobileListMenu, setMobileListMenu] = useState<boolean>(false);
     const router = useRouter();
     const handleShowPasswordClick = () => {

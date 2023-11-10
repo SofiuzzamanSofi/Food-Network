@@ -1,88 +1,104 @@
 import type { NextPage } from "next";
-import { useCallback } from "react";
+import { useState, useCallback } from "react";
 import { useRouter } from "next/router";
+import Property1Default from "../components/property1-default";
 import Header from "../components/header";
+import name1Icon from "../public/name3@2x.png";
+import name2Icon from "../public/name4@2x.png";
+import name3Icon from "../public/name5@2x.png";
+import name4Icon from "../public/name6@2x.png";
+import name5Icon from "../public/name7@2x.png";
+import name6Icon from "../public/name8@2x.png";
+import name7Icon from "../public/name9@2x.png";
+import name8Icon from "../public/name10@2x.png";
+import name9Icon from "../public/name11@2x.png";
+import name10Icon from "../public/name12@2x.png";
+import MobileBottomMenu from "../components/MobileBottomMenu";
+import HomePage from "../components/HomePage";
+import LeftMenuDextop from "../components/LeftMenuDextop";
+import SettingComponent from "../components/SettingComponent";
+import MobileArrow from "../components/MobileArrow";
+import LeftListMobileMenu from "../components/LeftListMobileMenu";
+import EmptyPage from "../components/EmptyPage";
+
+
 
 const Screen2: NextPage = () => {
+    const [showPassword, setShowPassword] = useState<boolean>(false);
+    const [settingMenu, setSettingMenu] = useState<boolean>(false);
+    const [mobileListMenu, setMobileListMenu] = useState<boolean>(false);
     const router = useRouter();
+    const handleShowPasswordClick = () => {
+        setShowPassword(!showPassword);
+    };
 
-    const onIconsClick = useCallback(() => {
-        router.push("/home");
+    const onIcons1Click = useCallback(() => {
+        router.push("/");
     }, [router]);
 
+    console.log('mobileListMenu:', mobileListMenu);
+    // console.log('settingMenu:', settingMenu);
+
     return (
-        <div className="relative bg-white w-full h-[937px] overflow-hidden text-left text-[28px] text-white-mode-main-text-color font-inter">
-            <div className="absolute top-[60px] left-[69.8px] rounded-tl-3xl rounded-tr-none rounded-b-none bg-whitesmoke-300 w-[1850.3px] h-[1155.3px]" />
-            <div className="absolute top-[72px] left-[calc(50%_-_873px)] w-[1819px] flex flex-col items-start justify-start">
-                <div className="self-stretch rounded-3xs bg-white h-[830px] flex flex-col items-center justify-center p-11 box-border gap-[42px]">
-                    <img
-                        className="relative w-[526.6px] h-[298.3px] object-cover"
-                        alt=""
-                        src="/image-1@2x.png"
-                    />
-                    <b className="relative leading-[130%] capitalize">
-                        This page is empty
-                    </b>
-                </div>
-            </div>
-            <div className="absolute top-[60px] left-[0px] rounded-3xs bg-white w-[70px] h-[830px] flex flex-col items-center justify-center pt-[15px] px-0 pb-0 box-border gap-[10px]">
-                <div className="flex flex-col items-center justify-center z-[0]">
-                    <div className="flex flex-col items-center justify-start gap-[35px]">
-                        <img
-                            className="relative rounded-md w-9 h-9 overflow-hidden shrink-0 cursor-pointer"
-                            alt=""
-                            src="/icons9.svg"
-                            onClick={onIconsClick}
-                        />
-                        <img
-                            className="relative rounded-md w-[38px] h-[38px] overflow-hidden shrink-0"
-                            alt=""
-                            src="/icons10.svg"
-                        />
-                        <img
-                            className="relative rounded-md w-9 h-9 overflow-hidden shrink-0 hidden"
-                            alt=""
-                            src="/icons2.svg"
-                        />
-                        <img
-                            className="relative rounded-md w-9 h-9 hidden"
-                            alt=""
-                            src="/icons3.svg"
-                        />
-                        <img
-                            className="relative rounded-md w-9 h-9 hidden"
-                            alt=""
-                            src="/icons4.svg"
-                        />
-                        <img
-                            className="relative rounded-md w-9 h-9 hidden"
-                            alt=""
-                            src="/icons5.svg"
-                        />
-                        <img
-                            className="relative rounded-md w-[34px] h-[34px]"
-                            alt=""
-                            src="/icons6.svg"
-                        />
-                        <img
-                            className="relative rounded-md w-9 h-9"
-                            alt=""
-                            src="/icons7.svg"
-                        />
-                        <img
-                            className="relative rounded-md w-9 h-9"
-                            alt=""
-                            src="/icons8.svg"
-                        />
-                    </div>
-                </div>
-                <img
-                    className="absolute my-0 mx-[!important] bottom-[20px] left-[17px] rounded-md w-9 h-9 hidden z-[1]"
-                    alt=""
-                    src="/frame-767.svg"
+        <div className="relative mx-auto max-w-[120rem] min-h-screen bg-white overflow-scroll ">
+
+            {/* upper-header  */}
+            <Header setSettingMenu={setSettingMenu} />
+
+            <MobileArrow setMobileListMenu={setMobileListMenu} />
+
+            {
+                mobileListMenu &&
+                <LeftListMobileMenu
+                    name1={name1Icon}
+                    name2={name2Icon}
+                    name3={name3Icon}
+                    name4={name4Icon}
+                    name5={name5Icon}
+                    name6={name6Icon}
+                    name7={name7Icon}
+                    name8={name8Icon}
+                    name9={name9Icon}
+                    name10={name10Icon}
+                    // leftListMobileMenuPosition="absolute"
+                    // leftListMobileMenuTop="72px"
+                    // leftListMobileMenuLeft="84.8px"
+                    setMobileListMenu={setMobileListMenu}
                 />
-            </div>
-            <Header />
+            }
+
+
+            <section
+                className="flex"
+            >
+                {/* left || last-left button menu  */}
+                <LeftMenuDextop />
+
+                <section
+                    className="grow bg-whitesmoke-300 min-h-[calc(100vh-60px)] rounded-l-xl lg:flex gap-4 p-3.5 pb-[3.75rem] overflow-x-scroll"
+                >
+
+                    {/* main home page image text  */}
+                    <EmptyPage />
+
+                    {/* right side menu/setting  */}
+                </section>
+
+                {
+                    settingMenu &&
+
+                    <SettingComponent
+                        settingComponentHeight="262px"
+                        settingComponentWidth="300px"
+                        settingComponentPosition="absolute"
+                        // settingComponentTop="72px"
+                        settingComponentRight="0px"
+                    />
+                }
+            </section>
+
+            {/* mobile menu button only show on mobile in bottom  */}
+            <MobileBottomMenu />
         </div>
     );
 };
