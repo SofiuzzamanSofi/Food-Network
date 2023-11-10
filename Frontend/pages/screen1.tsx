@@ -22,6 +22,7 @@ import SettingComponent from "../components/SettingComponent";
 
 const Screen1: NextPage = () => {
     const [showPassword, setShowPassword] = useState<boolean>(false);
+    const [settingMenu, setSettingMenu] = useState<boolean>(true);
     const router = useRouter();
     const handleShowPasswordClick = () => {
         setShowPassword(!showPassword);
@@ -32,10 +33,10 @@ const Screen1: NextPage = () => {
     }, [router]);
 
     return (
-        <div className="relative mx-auto max-w-[1850.3px] min-h-screen bg-white overflow-scroll ">
+        <div className="relative mx-auto max-w-[120rem] min-h-screen bg-white overflow-scroll ">
 
             {/* upper-header  */}
-            <Header />
+            <Header setSettingMenu={setSettingMenu} />
 
             <section
                 className="flex"
@@ -67,13 +68,17 @@ const Screen1: NextPage = () => {
                     <HomePage />
 
                     {/* right side menu/setting  */}
-                    <SettingComponent
-                        settingComponentHeight="262px"
-                        settingComponentWidth="300px"
-                        settingComponentPosition="static"
-                        settingComponentTop="72px"
-                        settingComponentRight="0px"
-                    />
+                    {
+                        settingMenu &&
+
+                        <SettingComponent
+                            settingComponentHeight="262px"
+                            settingComponentWidth="300px"
+                            settingComponentPosition="absolute"
+                            settingComponentTop="72px"
+                            settingComponentRight="0px"
+                        />
+                    }
                 </section>
             </section>
 

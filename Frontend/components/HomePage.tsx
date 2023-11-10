@@ -17,7 +17,7 @@ interface HomePageProps {
 
 const HomePage: FC<HomePageProps> = ({ }) => {
     return (
-        <section className="flex flex-col items-start justify-start text-left text-lg text-white-mode-main-text-color font-inter rounded-lg  lg:p-11 min-w-[330px] lg:max-w-[1190px] bg-black">
+        <section className="shrink-3 flex flex-col items-start justify-start text-left text-lg text-white-mode-main-text-color font-inter rounded-lg  lg:p-11 min-w-[330px] lg:max-w-[1190px] bg-white">
             <div className="rounded-3xs bg- flex flex-row items-start justify-start gap-[42px]">
                 <div className="flex flex-col items-start justify-start py-[60px] px-0 gap-[22px]">
                     <Image className="relative w-7 h-7 cursor-pointer" alt="" src={facebookIcon} />

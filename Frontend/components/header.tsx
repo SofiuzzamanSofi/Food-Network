@@ -1,4 +1,4 @@
-import type { NextPage } from "next";
+import { FC } from "react";
 import Image from "next/image";
 import foodnetworkIcon from "../public/foodnetwork-1.svg"
 import frame2Icon from "../public/frame2.svg"
@@ -9,8 +9,11 @@ import frame768Icon from "../public/frame-768.svg"
 import name13Icon from "../public/name13.svg"
 import bookmark01Icon from "../public/bookmark01.svg"
 
+interface HeaderProps {
+  setSettingMenu: React.Dispatch<React.SetStateAction<boolean>>
+}
 
-const Header: NextPage = () => {
+const Header: FC<HeaderProps> = ({ setSettingMenu }) => {
   return (
     <header className=" bg-white flex flex-row items-center justify-between py-2.5 pr-[15px] pl-[26px] box-border text-left text-sm text-white font-inter min-w-[360px] max-w-[1920px]">
       <div className="flex-1 flex flex-row items-center justify-start">
@@ -73,6 +76,7 @@ const Header: NextPage = () => {
           className="relative rounded-md w-8 h-8 cursor-pointer"
           alt=""
           src={frame765Icon}
+          onClick={() => setSettingMenu((prev) => !prev)}
         />
       </div>
     </header>
