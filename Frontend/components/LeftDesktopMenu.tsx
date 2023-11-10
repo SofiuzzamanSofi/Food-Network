@@ -6,7 +6,7 @@ import frame2Icon from "../public/frame2.svg"
 import fi891094Icon from "../public/fi-891094.svg"
 import dotMenuIcon from "../public/dot-menu.svg"
 
-type Property1DefaultType = {
+type LeftDesktopMenuType = {
     name1: StaticImageData;
     name2: StaticImageData;
     name3: StaticImageData;
@@ -19,12 +19,12 @@ type Property1DefaultType = {
     name10: StaticImageData;
 
     /** Style props */
-    property1DefaultPosition?: CSSProperties["position"];
-    property1DefaultTop?: CSSProperties["top"];
-    property1DefaultLeft?: CSSProperties["left"];
+    leftDesktopMenuPosition?: CSSProperties["position"];
+    leftDesktopMenuTop?: CSSProperties["top"];
+    leftDesktopMenuLeft?: CSSProperties["left"];
 };
 
-const Property1Default: NextPage<Property1DefaultType> = ({
+const LeftDesktopMenu: NextPage<LeftDesktopMenuType> = ({
     name1,
     name2,
     name3,
@@ -35,22 +35,22 @@ const Property1Default: NextPage<Property1DefaultType> = ({
     name8,
     name9,
     name10,
-    property1DefaultPosition,
-    property1DefaultTop,
-    property1DefaultLeft,
+    leftDesktopMenuPosition,
+    leftDesktopMenuTop,
+    leftDesktopMenuLeft,
 }) => {
-    const property1DefaultStyle: CSSProperties = useMemo(() => {
+    const leftDesktopMenuStyle: CSSProperties = useMemo(() => {
         return {
-            position: property1DefaultPosition,
-            top: property1DefaultTop,
-            left: property1DefaultLeft,
+            position: leftDesktopMenuPosition,
+            top: leftDesktopMenuTop,
+            left: leftDesktopMenuLeft,
         };
-    }, [property1DefaultPosition, property1DefaultTop, property1DefaultLeft]);
+    }, [leftDesktopMenuPosition, leftDesktopMenuTop, leftDesktopMenuLeft]);
 
     return (
         <div
             className="hidden shrink-0 lg:flex rounded-mini bg-white w-[300px] h-[830px] flex-col items-center justify-start p-[15px] box-border gap-[15px] text-left text-xs text-tomato-100 font-inter z-50 shadow-lg"
-            style={property1DefaultStyle}
+            style={leftDesktopMenuStyle}
         >
             <div className="self-stretch rounded-3xs bg-white flex flex-row items-start justify-start p-1 gap-[10px] z-[0] text-sm border-[2px] border-solid border-tomato-200 cursor-pointer">
                 <div className="flex-1 rounded-6xs bg-tomato-400 flex flex-row items-center justify-center py-2.5 px-1">
@@ -381,4 +381,4 @@ const Property1Default: NextPage<Property1DefaultType> = ({
     );
 };
 
-export default Property1Default;
+export default LeftDesktopMenu;

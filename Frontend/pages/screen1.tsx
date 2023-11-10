@@ -1,7 +1,5 @@
-import type { NextPage } from "next";
-import { useState, useCallback } from "react";
-import { useRouter } from "next/router";
-import Property1Default from "../components/property1-default";
+import { useState } from "react";
+import LeftDesktopMenu from "../components/LeftDesktopMenu";
 import Header from "../components/header";
 import name1Icon from "../public/name3@2x.png";
 import name2Icon from "../public/name4@2x.png";
@@ -20,23 +18,9 @@ import SettingComponent from "../components/SettingComponent";
 import MobileArrow from "../components/MobileArrow";
 import LeftListMobileMenu from "../components/LeftListMobileMenu";
 
-
-
-const Screen1: NextPage = () => {
-    const [showPassword, setShowPassword] = useState<boolean>(false);
+const Screen1 = () => {
     const [settingMenu, setSettingMenu] = useState<boolean>(false);
     const [mobileListMenu, setMobileListMenu] = useState<boolean>(false);
-    const router = useRouter();
-    const handleShowPasswordClick = () => {
-        setShowPassword(!showPassword);
-    };
-
-    const onIcons1Click = useCallback(() => {
-        router.push("/");
-    }, [router]);
-
-    console.log('mobileListMenu:', mobileListMenu);
-    // console.log('settingMenu:', settingMenu);
 
     return (
         <div className="relative mx-auto max-w-[120rem] min-h-screen bg-white overflow-scroll ">
@@ -44,8 +28,10 @@ const Screen1: NextPage = () => {
             {/* upper-header  */}
             <Header setSettingMenu={setSettingMenu} />
 
+            {/* mobile menu arrow button only:MOBILE */}
             <MobileArrow setMobileListMenu={setMobileListMenu} />
 
+            {/* mobile menu-list position:ABSOLUTE  */}
             {
                 mobileListMenu &&
                 <LeftListMobileMenu
@@ -59,17 +45,11 @@ const Screen1: NextPage = () => {
                     name8={name8Icon}
                     name9={name9Icon}
                     name10={name10Icon}
-                    // leftListMobileMenuPosition="absolute"
-                    // leftListMobileMenuTop="72px"
-                    // leftListMobileMenuLeft="84.8px"
                     setMobileListMenu={setMobileListMenu}
                 />
             }
 
-
-            <section
-                className="flex"
-            >
+            <section className="flex">
                 {/* left || last-left button menu  */}
                 <LeftMenuDextop />
 
@@ -77,7 +57,7 @@ const Screen1: NextPage = () => {
                     className="grow bg-whitesmoke-300 min-h-[calc(100vh-60px)] rounded-l-xl lg:flex gap-4 p-3.5 pb-[3.75rem] overflow-x-scroll"
                 >
                     {/* left side list menu DESKTOP */}
-                    <Property1Default
+                    <LeftDesktopMenu
                         name1={name1Icon}
                         name2={name2Icon}
                         name3={name3Icon}
@@ -88,9 +68,6 @@ const Screen1: NextPage = () => {
                         name8={name8Icon}
                         name9={name9Icon}
                         name10={name10Icon}
-                    // property1DefaultPosition="absolute"
-                    // property1DefaultTop="72px"
-                    // property1DefaultLeft="84.8px"
                     />
 
                     {/* main home page image text  */}
@@ -99,12 +76,10 @@ const Screen1: NextPage = () => {
                     {/* right side menu/setting  */}
                     {
                         settingMenu &&
-
                         <SettingComponent
                             settingComponentHeight="262px"
                             settingComponentWidth="300px"
                             settingComponentPosition="absolute"
-                            // settingComponentTop="72px"
                             settingComponentRight="0px"
                         />
                     }
