@@ -52,11 +52,11 @@ const Property1Default: NextPage<Property1DefaultType> = ({
             className="hidden shrink-0 lg:flex rounded-mini bg-white w-[300px] h-[830px] flex-col items-center justify-start p-[15px] box-border gap-[15px] text-left text-xs text-tomato-100 font-inter z-50 shadow-lg"
             style={property1DefaultStyle}
         >
-            <div className="self-stretch rounded-3xs bg-white flex flex-row items-start justify-start p-1 gap-[10px] z-[0] text-sm border-[2px] border-solid border-tomato-200">
+            <div className="self-stretch rounded-3xs bg-white flex flex-row items-start justify-start p-1 gap-[10px] z-[0] text-sm border-[2px] border-solid border-tomato-200 cursor-pointer">
                 <div className="flex-1 rounded-6xs bg-tomato-400 flex flex-row items-center justify-center py-2.5 px-1">
                     <div className="relative font-semibold">Fruits</div>
                 </div>
-                <div className="flex-1 rounded-6xs bg-white flex flex-row items-center justify-center py-2.5 px-1 text-gray-200">
+                <div className="flex-1 rounded-6xs bg-white flex flex-row items-center justify-center py-2.5 px-1 text-gray-200 cursor-pointer">
                     <div className="relative">Vegetables</div>
                 </div>
             </div>

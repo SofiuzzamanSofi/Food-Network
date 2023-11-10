@@ -24,6 +24,7 @@ import MobileArrow from "../components/MobileArrow";
 const Screen1: NextPage = () => {
     const [showPassword, setShowPassword] = useState<boolean>(false);
     const [settingMenu, setSettingMenu] = useState<boolean>(true);
+    const [mobileListMenu, setMobileListMenu] = useState<boolean>(false);
     const router = useRouter();
     const handleShowPasswordClick = () => {
         setShowPassword(!showPassword);
@@ -39,7 +40,7 @@ const Screen1: NextPage = () => {
             {/* upper-header  */}
             <Header setSettingMenu={setSettingMenu} />
 
-            <MobileArrow />
+            <MobileArrow setMobileListMenu={setMobileListMenu} />
 
             <section
                 className="flex"
