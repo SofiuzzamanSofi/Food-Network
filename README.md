@@ -18,10 +18,10 @@ First clone this project:
 ```bash
 git clone https://github.com/SofiuzzamanSofi/Food-Network.git
 ```
-Then go to server or Frontend code:
+Then go to Frontend code:
 
 ```bash
-cd Frontend
+cd Food-Network/Frontend
 ```
 
 Then install dependencies and modules files:
